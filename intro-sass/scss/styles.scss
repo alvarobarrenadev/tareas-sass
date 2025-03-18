@@ -1,0 +1,9 @@
+// Esto es un comentario solo de sass y no se compilará en CSS
+// /* Esto es otro comentario estandar que se compilará en CSS pero se elimina en compressed */
+// /*! Esto es un comentario especial que se compilará en CSS y NO se elimina en compressed */
+
+$primary-color: #ff0000;
+$secondary-color: #00dfff;
+$text-normal-size: 18px;
+
+@use 'header.scss'; // No usar @import, está deprecado

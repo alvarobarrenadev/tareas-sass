@@ -1,0 +1,28 @@
+@use './abstracts/abstracts' as abs;
+@use './base/base' as bs;
+@use './components/components' as comp;
+@use './layout/layout' as lyt;
+@use './pages/pages' as pgs;
+@use './themes/themes' as thms;
+@use './vendors/vendors' as vds;
+
+h1 {
+    color: red;
+    @include abs.breakpoint(tablet) {
+        color: green;
+    }
+
+    @include abs.breakpoint(tablethorizontal) {
+        color: yellow;
+    }
+
+    @include abs.breakpoint(desktop) {
+        color: black;
+        text-align: center;
+    }
+
+    @include abs.breakpoint(desktopxl) {
+        color: purple;
+        text-align: right;
+    }
+}
